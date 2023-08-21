@@ -2,14 +2,14 @@
 
 function threeSort (arr) {
     if (arr.length === 0) {
-        return a;
+        return [];
     }
 
     let a = [arr[0]];
     for (let i = 1; i < arr.length; i++) {
         if (a[a.length - 1] > arr[i]) {
             a.push(arr[i]);
-            for (let j = a.length - 1; j !== 0; j--) {
+            for (let j = a.length; j !== 0; j--) {
                 if (a[j] <= a[j - 1]) {
                     let tmp = a[j]
                     a[j] = a[j-1]
@@ -24,6 +24,6 @@ function threeSort (arr) {
     return a
 }
 
-let arr = [2, 8, 3, 4, 5, 10, 1, 12, 3]
+let arr = []
 
 console.log(threeSort(arr));
