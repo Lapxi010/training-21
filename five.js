@@ -5,7 +5,7 @@ class Three {
     }
 }
 
-function dfs (three, cb) {
+function bfs (three, cb) {
     if (three) {
         let queue = [three];
         
@@ -17,7 +17,7 @@ function dfs (three, cb) {
             }
             
             cb(node.value);
-            
+
             let level = queue.length;
 
             for (let i = 0; i < level; i++) {
