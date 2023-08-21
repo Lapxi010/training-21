@@ -24,6 +24,6 @@ function threeSort (arr) {
     return a
 }
 
-let arr = []
+let arr = [2, 1]
 
 console.log(threeSort(arr));
