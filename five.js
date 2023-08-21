@@ -5,6 +5,18 @@ class Three {
     }
 }
 
+class TwoArray {
+    constructor (value, prev, next) {
+        this.value = value
+        this.prev = prev
+        this.next = next
+    }
+
+    pop () {
+        
+    } 
+}
+
 function bfs (three, cb) {
     if (three) {
         let queue = [three];
