@@ -1,3 +1,5 @@
+// че то затупил в начале
+
 function threeSort (arr) {
     if (arr.length === 0) {
         return a;
