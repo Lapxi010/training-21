@@ -20,8 +20,8 @@ function er (n) {
             }
         }
     }
-    
-    return arr.reduce((acc, el) => el !== null ? acc += 1 : acc, 0)
+
+    return arr.reduce((acc, el) => el !== null ? acc = [...acc, el] : acc, [])
 }
 
 console.log(er(9))

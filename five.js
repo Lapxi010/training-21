@@ -29,11 +29,12 @@ class Queue {
         }
         let tmp = this.head 
 
-        if (this.head.next === null) {
-            this.head = this.tail
-        } else {
+        if (this.head) {
             this.head = this.head.next
+        }  else {
+            this.head = null
         }
+        
         if (this.length > 0) {
             this.length -= 1
         }
@@ -58,7 +59,7 @@ function bfs (three, cb) {
             for (let i = 0; i < level; i++) {
                 let node = queue.shift();
 
-                if (node.value === null) {
+                if (node === null) {
                     continue
                 }
                 
