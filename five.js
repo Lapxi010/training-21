@@ -10,17 +10,17 @@ function bfs (three, cb) {
         let queue = [three];
         
         while (queue.length !== 0) {
-            let node = queue.shift();
-
-            if (node.value === null) {
-                continue
-            }
-            
-            cb(node.value);
-
             let level = queue.length;
 
             for (let i = 0; i < level; i++) {
+                let node = queue.shift();
+
+                if (node.value === null) {
+                    continue
+                }
+                
+                cb(node.value)
+
                 queue.push(node.children[i]);
             }
         }
