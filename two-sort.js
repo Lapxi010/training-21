@@ -21,6 +21,6 @@ function twoSort (arr) {
     return arr
 }
 
-let arr = [2, 8, 3, 4, 5, 10, 1, 12]
+let arr = [2, 8, 3, 4, 5, 10, 1, 12, 3]
 
 console.log(twoSort(arr));
