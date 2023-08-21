@@ -12,6 +12,6 @@ function bubleSort (arr) {
     return arr
 }
 
-let arr = [2, 8, 3, 4, 5, 10, 1]
+let arr = [2, 8, 3, 4, 5, 10, 1, 12]
 
 console.log(bubleSort(arr));
