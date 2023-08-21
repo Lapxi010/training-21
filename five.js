@@ -21,7 +21,7 @@ function bfs (three, cb) {
                 
                 cb(node.value)
 
-                queue.push(node.children[i]);
+                queue.push(...node.children);
             }
         }
     }
