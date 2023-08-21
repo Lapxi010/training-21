@@ -25,4 +25,5 @@ let three = new LinkedList(3, null);
 
 one.next = two
 two.next = three
+console.log(one)
 console.log(reverceLinkedList(one))
