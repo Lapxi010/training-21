@@ -7,16 +7,16 @@ class LinkedList {
 
 function reverceLinkedList (node) {
     let dummy = node
-    let prev = null 
+    let cur = null 
 
     while (dummy) {
         let tmp = dummy.next
-        dummy.next = prev
-        prev = dummy
+        dummy.next = cur
+        cur = dummy
         dummy = tmp 
     }
 
-    return prev
+    return cur
 }
 
 let one = new LinkedList(1, null);
